@@ -1,2 +1,2 @@
 #!/bin/bash
-/home/noitanec/yak/artha/dictionary.py $1
+/home/noitanec/yak/dictionary/dictionary/dictionary.py $1

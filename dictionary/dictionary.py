@@ -13,10 +13,12 @@ response = requests.get(url=URL)
 if response:
     data = response.json()
 
-    print("\n\t", key, ": ", data[0]['meanings'][0]['definitions'][0]
+    print("\n\t", key.upper(), ": ", data[0]['meanings'][0]['definitions'][0]
           ['definition'])
     fields = data[0]['meanings'][0]['definitions'][0].keys()
     if 'synonyms' in fields:
-        print("\n\tSynonyms: ", data[0]['meanings'][0]['definitions'][0]['synonyms'], "\n")
+        print("\n\tSYNONYMS: ", data[0]['meanings'][0]['definitions'][0]['synonyms'], "\n")
+    if 'example' in fields:
+        print("\n\tEXAMPLE: ", data[0]['meanings'][0]['definitions'][0]['example'], "\n")
 else:
     print("Try another word")
