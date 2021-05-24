@@ -1,2 +1,2 @@
 #!/bin/bash
-/home/noitanec/yak/dictionary/dictionary/dictionary.py $1
+<path_to_dictionary.py> $1
