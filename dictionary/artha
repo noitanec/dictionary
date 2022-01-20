@@ -1,2 +1,8 @@
 #!/bin/bash
-/home/noitanec/yak/dictionary/dictionary/dictionary.py $1
+
+for word in $@
+do
+    phrase+=" $word"
+done
+
+/home/noitanec/yak/dictionary/dictionary/dictionary.py $phrase
