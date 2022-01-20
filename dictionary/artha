@@ -5,4 +5,5 @@ do
     phrase+=" $word"
 done
 
-./dictionary.py $phrase
+SCRIPT_DIR=$( cd -- "$( dirname -- "${BASH_SOURCE[0]}" )" &> /dev/null && pwd )
+$SCRIPT_DIR/dictionary.py $phrase
