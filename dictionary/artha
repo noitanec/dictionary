@@ -5,4 +5,4 @@ do
     phrase+=" $word"
 done
 
-/home/noitanec/yak/dictionary/dictionary/dictionary.py $phrase
+./dictionary.py $phrase
